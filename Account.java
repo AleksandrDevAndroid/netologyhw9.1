@@ -7,7 +7,6 @@ public abstract class Account implements Operation {
         this.name = name;
         this.balance = amount;
         this.creditLimit = creditLimit;
-
     }
 
     abstract boolean add(long amount);
@@ -15,6 +14,4 @@ public abstract class Account implements Operation {
     abstract boolean pay(long amount);
 
     abstract boolean transfer(Account account, long amount);
-
-
 }
